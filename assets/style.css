@@ -6,6 +6,7 @@
   margin-top: 100px;
   padding-top: 30px;
   margin-bottom: 100px;
+  cursor: pointer;
   background-color: lightyellow;
 }
 .container .image-responsive {
@@ -16,14 +17,19 @@
   margin-bottom: -10px;
   object-fit: cover;
 }
+.container .photo,
+.container .photo2,
+.container .photo3 {
+  overflow: hidden;
+}
 .container :hover .image-responsive {
   max-width: 100% !important;
   overflow-x: hidden !important;
-  transform: scale(1.01);
+  transform: scale(1.1);
   transition: 2s all ease-in-out;
 }
 .container #image-responsive {
-  height: 120px !important;
+  height: 120px ;
   width: 200px ;
   object-fit: cover;
   border-top-left-radius: 10px;
@@ -31,8 +37,9 @@
   padding-right: -350px;
   margin-top: 13px;
 }
-.container .container :hover #image-responsive {
-  width: 200px;
+.container .photo3 :hover #image-rwsponsive {
+  transform: scale(1.1);
+  transition: 2s all ease-in-out;
 }
 /*@keyframes zoomIn{
     
@@ -63,6 +70,7 @@
   display: inline-block;
   align-items: center;
   justify-content: center;
+  cursor: auto;
 }
 .title {
   color: #384453;
@@ -110,6 +118,9 @@
   max-height: 100%;
   top: -30px;
   position: relative;
+}
+.columns .col-4 .photo3 {
+  overflow: hidden;
 }
 .columns .col-5 {
   max-width: 100% ;
@@ -162,4 +173,5 @@
   margin-bottom: 100px;
   padding: 0 10px;
   color: white;
+  cursor: pointer;
 }

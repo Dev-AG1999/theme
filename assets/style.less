@@ -16,6 +16,7 @@
     margin-top: 100px;
     padding-top: 30px;
     margin-bottom: 100px;
+    cursor: pointer;
 
    
 
@@ -36,6 +37,9 @@ background-color: lightyellow;
 
 
     }
+    .photo,.photo2,.photo3{
+        overflow: hidden;
+    }
      :hover .image-responsive{
        max-width: 100% !important;
     
@@ -44,7 +48,7 @@ background-color: lightyellow;
 overflow-x: hidden !important;
 
 
-transform:scale(1.01);
+transform:scale(1.1);
 
 transition: 2s  all ease-in-out;
     
@@ -54,8 +58,9 @@ transition: 2s  all ease-in-out;
 
 
 
+  
     #image-responsive{
-        height:120px !important;
+        height:120px ;
     width: 200px ;
     object-fit: cover;
     
@@ -69,15 +74,16 @@ transition: 2s  all ease-in-out;
 
     
     }
+    .photo3 :hover #image-rwsponsive{
+        transform: scale(1.1);
+        transition: 2s all ease-in-out;
+        
+    }
   
     
 
-.container :hover #image-responsive {
-    
 
-    width:200px;
-    
-}
+
 }
 /*@keyframes zoomIn{
     
@@ -109,7 +115,7 @@ transition: 2s  all ease-in-out;
     display: inline-block;
     align-items: center;
     justify-content: center;
-   
+   cursor:auto;
 
 
 }
@@ -163,7 +169,11 @@ left:52%;
    max-height: 100%;
    
 top:-30px;
-position: relative;   
+position: relative;  
+
+.photo3{
+    overflow: hidden;
+}
 }
 .col-5{
     max-width:100% ;  
@@ -242,7 +252,7 @@ padding-top:20px;
 padding: 0 10px;
 
 color: white;
+cursor: pointer;
 }
-
 
     
